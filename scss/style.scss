@@ -1,0 +1,141 @@
+@import "./reset";
+@import "./body";
+@import "./variables";
+@import "./mixin";
+@import "./footer";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Roboto+Condensed:ital,wght@1,300&family=Source+Sans+Pro:ital@1&display=swap');
+
+.bg-yellow{
+    background-color: #f6ed72;
+} 
+
+/* styles quienes somos */
+
+.nosotros-img {
+text-align: center
+}
+.iframe-qs{
+    @include sizes(600px, 450px);
+}
+.tittle{
+    font-size: x-large;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+}
+/* styles productos */
+.card{
+    background-color: antiquewhite;
+    color: black;
+}
+.card-title{
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+    
+.imagen-mp{
+margin-top: 50px;
+border-radius: 10px;
+
+}
+.cards{
+    padding-left: 0%;
+}
+.title-card{
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+@media screen and (max-width:990px){
+    .bg-yellow{
+        background-color:  map-get($colores, "color-nav" );
+        }
+
+    .footer{
+        background-color: map-get($colores, "color-footer" );
+        
+    }
+    }
+
+@media screen and (max-width:768px){
+.bg-yellow{
+    background-color:  map-get($colores, "color-nav" );
+    }
+
+.footer{
+    background-color: map-get($colores, "color-footer" );
+    
+}
+}
+
+@media screen and (max-width:480px){
+ .bg-yellow{
+    background-color:  map-get($colores , "color-mq-mobile" );
+    
+    }
+.img-carousel{
+    margin-top: 20px;
+    @include sizes(400px, 350px);
+    
+}
+#cards{
+    padding-left: 50px;
+}
+.img-carousel-qs{
+    margin-top: 20px;
+    @include sizes(400px, 250px);
+    
+}
+.iframe-qs{
+    @include sizes(350px, 300px);
+}
+#marcas img{
+    @include sizes(30px, 30px);
+    
+
+}
+.imagen-mp{
+    @include sizes(280px, 150px);
+    
+}
+.img-error{
+    @include sizes(300px, 250px);
+}
+
+.logo-redes{
+    text-align: center;
+    font-size: 15px;
+
+}
+.footer{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    background-color:map-get($colores , "color-mq-mobiled" ); 
+}
+ul{
+    padding-left: 0%;
+}
+li{
+    text-align: center;
+        } 
+.footer-redes{
+    width: 150px;
+}} 
+
+@media screen and (max-width:378px){
+.img-carousel{
+    margin-top: 20px;
+    @include sizes(350px, 300px);
+    
+}
+.img-carousel-qs{
+    margin-top: 20px;
+    @include sizes(350px, 180px);
+    
+}
+#cards{
+    padding-left: 0%;
+}
+.img-error{
+    @include sizes(280px, 230px);
+}
+}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Roboto+Condensed:ital,wght@1,300&family=Source+Sans+Pro:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  background: linear-gradient(to right, #96eff4 0%, #f7eeabfd 42%, #f0eb95 51%, #91f3f5f9 100%); }
+
+body p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: medium; }
+
+.card {
+  box-shadow: 0px 1px 10px antiquewhite;
+  transition: all 400ms ease; }
+
+.card:hover {
+  box-shadow: 5px 5px 20px antiquewhite;
+  transform: translateY(-3%); }
+
+.btn-primary {
+  border: none;
+  background-color: #f68acc; }
+
+.lista li {
+  list-style-type: none; }
+
+.bi-instagram {
+  color: #cc2366; }
+
+.bi-whatsapp {
+  color: #0dc70d; }
+
+.btn-whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+  transition: height 2s, width 1s; }
+  .btn-whatsapp:hover {
+    width: 100px;
+    height: 100px; }
+
+footer {
+  background-color: #f6ed72;
+  margin-top: 40px; }
+  footer ul li {
+    list-style-type: none; }
+    footer ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-size: medium;
+      white-space: 200px; }
+
+.btn-outline-secondary {
+  background-color: antiquewhite;
+  font-size: medium;
+  color: #000000;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.footer-redes {
+  width: 200px; }
+
+.logo-redes {
+  margin-bottom: 20px;
+  width: 150px; }
+
+.bg-yellow {
+  background-color: #f6ed72; }
+
+/* styles quienes somos */
+.nosotros-img {
+  text-align: center; }
+
+.iframe-qs {
+  height: 450px;
+  width: 600px; }
+
+.tittle {
+  font-size: x-large;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black; }
+
+/* styles productos */
+.card {
+  background-color: antiquewhite;
+  color: black; }
+
+.card-title {
+  font-family: 'Oswald', sans-serif;
+  color: black; }
+
+.imagen-mp {
+  margin-top: 50px;
+  border-radius: 10px; }
+
+.cards {
+  padding-left: 0%; }
+
+.title-card {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+@media screen and (max-width: 990px) {
+  .bg-yellow {
+    background-color: #caf29f; }
+  .footer {
+    background-color: #f6ed72; } }
+
+@media screen and (max-width: 768px) {
+  .bg-yellow {
+    background-color: #caf29f; }
+  .footer {
+    background-color: #f6ed72; } }
+
+@media screen and (max-width: 480px) {
+  .bg-yellow {
+    background-color: #b8f184; }
+  .img-carousel {
+    margin-top: 20px;
+    height: 350px;
+    width: 400px; }
+  #cards {
+    padding-left: 50px; }
+  .img-carousel-qs {
+    margin-top: 20px;
+    height: 250px;
+    width: 400px; }
+  .iframe-qs {
+    height: 300px;
+    width: 350px; }
+  #marcas img {
+    height: 30px;
+    width: 30px; }
+  .imagen-mp {
+    height: 150px;
+    width: 280px; }
+  .img-error {
+    height: 250px;
+    width: 300px; }
+  .logo-redes {
+    text-align: center;
+    font-size: 15px; }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #caf29f; }
+  ul {
+    padding-left: 0%; }
+  li {
+    text-align: center; }
+  .footer-redes {
+    width: 150px; } }
+
+@media screen and (max-width: 378px) {
+  .img-carousel {
+    margin-top: 20px;
+    height: 300px;
+    width: 350px; }
+  .img-carousel-qs {
+    margin-top: 20px;
+    height: 180px;
+    width: 350px; }
+  #cards {
+    padding-left: 0%; }
+  .img-error {
+    height: 230px;
+    width: 280px; } }
